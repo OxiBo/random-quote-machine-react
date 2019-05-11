@@ -1,0 +1,119 @@
+* {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "IBM Plex Serif", "Palatino Linotype", "Book Antiqua", Palatino,
+    serif;
+}
+
+html,
+body {
+  background: url(./gallery/backgroundImg.jpg) no-repeat center center fixed;
+  background-size: cover;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+    header {
+      margin: 35px auto 15px auto;
+    }
+
+    main {
+      flex: 1;
+
+      .quote {
+        width: 85%;
+        min-height: 190px;
+        border-radius: 5px;
+        background-color: white;
+        box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+          0 17px 50px 0 rgba(0, 0, 0, 0.19);
+        margin: 30px auto;
+        padding: 10px;
+
+        .error {
+          color: red;
+        }
+
+        blockquote {
+          border-left: 3px solid rgb(190, 183, 183);
+          height: 120px;
+          padding: 20px;
+          margin: 15px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          overflow: auto;
+          box-shadow: 0 5px 5px 6px rgba(0, 0, 0, 0.15),
+            0 15px 15px 0 rgba(0, 0, 0, 0.01);
+        }
+
+        p#author {
+          text-align: right;
+          font-style: italic;
+          font-weight: bold;
+          margin: 5px;
+          padding: 5px;
+        }
+      }
+
+      .button-container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        //  align-items: center;
+
+        button {
+          background-color: white;
+          box-sizing: border-box;
+          padding: 5px;
+          font-size: 12px;
+          font-weight: bold;
+          text-align: center;
+          text-decoration: none;
+          margin: 5px;
+          width: 150px;
+          height: 30px;
+          border-radius: 5px;
+          outline-color: #fbefcc;
+        }
+
+        button:hover {
+          box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+            0 17px 50px 0 rgba(0, 0, 0, 0.19);
+          outline-color: #fbefcc;
+        }
+      }
+    }
+
+    footer {
+      font-style: italic;
+      padding: 5px;
+    }
+  }
+}
+
+@media only screen and (min-width: 480px) {
+  .quote {
+    max-width: 80%;
+  }
+}
+@media only screen and (min-width: 700px) {
+  .quote {
+    max-width: 60%;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .quote {
+    max-width: 50%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .quote {
+    max-width: 30%;
+  }
+}
